@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  master:
+    build: .
+    env_file:
+    - dev.env
+    ports:
+    - "8089:8089"

@@ -1,0 +1,5 @@
+locust==2.5.1
+pyzmq==22.3.0
+Faker==11.3.0
+# ======
+constants==0.6.0
