@@ -54,4 +54,4 @@ class QuickstartUser(FastHttpUser):
 
         # Book
         self.client.get("/lideranca-e-gestao/lideres-extraordinarios/o-jogo-infinito", name="Book-03")
-        self.client.get("/lideranca-e-gestao/lideres-extraordinarios/o-jogo-infinito/page-data.json", name="page-data-book-03")
+        self.client.get("/page-data/lideranca-e-gestao/lideres-extraordinarios/o-jogo-infinito/page-data.json", name="page-data-book-03")
