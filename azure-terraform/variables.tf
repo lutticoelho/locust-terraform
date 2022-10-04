@@ -12,16 +12,17 @@ variable "locust_workers_locations" {
 }
 
 variable "locust_image_name" {
-  #default = "lutticoelho/locusttest:0.2"
+  default = "lutticoelho/locusttest:0.3"
   type = string
 }
 
 variable "locust_host_under_test" {
+  default = "https://liderancaegestao.online"
   type = string
 }
 
 variable "locust_file" {
-  #default = "/mnt/locust/locust.py"
+  default = "/mnt/locust/locust.py"
   type = string
 }
 
