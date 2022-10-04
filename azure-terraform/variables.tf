@@ -8,11 +8,12 @@ variable "resource_group_name" {
 }
 
 variable "locust_workers_locations" {
-  default = ["eastus2", "brazilsouth", "westeurope", "australiasoutheast", "eastus"]
+  #default = ["eastus2", "brazilsouth", "westeurope", "australiasoutheast", "eastus"]
+  default = ["eastus2"]
 }
 
 variable "locust_image_name" {
-  default = "lutticoelho/locusttest:0.3"
+  default = "lutticoelho/locustsample:0.5"
   type = string
 }
 
@@ -22,7 +23,7 @@ variable "locust_host_under_test" {
 }
 
 variable "locust_file" {
-  default = "/mnt/locust/locust.py"
+  default = "/home/locust/locust.py"
   type = string
 }
 
