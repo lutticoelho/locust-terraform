@@ -53,7 +53,7 @@ COPY . .
 
 EXPOSE 8089 5557
 
-#ENTRYPOINT ["locust"]
+ENTRYPOINT ["locust"]
 
 # turn off python output buffering
 ENV PYTHONUNBUFFERED=1

@@ -7,3 +7,10 @@ services:
     - dev.env
     ports:
     - "8089:8089"
+    command: -f /home/locust/locust.py --master -H https://liderancaegestao.online/
+
+  worker:
+    build: .
+    env_file:
+    - dev.env
+    command: -f /home/locust/locust.py --worker --master-host master
